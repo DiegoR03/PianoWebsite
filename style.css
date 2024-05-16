@@ -78,6 +78,7 @@ a {
   z-index: 0;
   position: relative;
   width: 100%;
+  height: auto;
   min-height: 100vh;
   overflow: hidden;
   background: #C19A6B;
@@ -88,7 +89,7 @@ a {
 /* Information boxes, met behulp van https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp */
 .infobox {
   flex-wrap: wrap;
-  width: 70%;
+  width: 20%;
   padding: 10px;
   border: 3px solid rgb(238, 238, 238);
   background-color: white;
@@ -111,21 +112,24 @@ a {
   float: left;
 }
 
-.infoboximg {
+.infoboxing {
   flex-wrap: wrap;
-  width: 150vh;
+  height: 20%;
+  width: 20%;
+  min-width: 20vh;
+  margin-left:4em;
   padding: 10px;
   border: 3px solid rgb(238, 238, 238);
   background-color: white;
-  margin: 1em;
   transition: transform .2s;
   display: flex;
   justify-content: center;
   align-items: center;
-  float: left;
+  float: inline-start;
+  position: relative;
 }
 
-.sheets {
+details li {
   flex-wrap: wrap;
   width: 151vh;
   border: 3px solid rgb(238, 238, 238);
@@ -151,6 +155,24 @@ a {
   flex-direction:inherit;
   flex-wrap: wrap;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  border: 3px solid rgb(238, 238, 238);
+  background-color: white;
+  width: 80%;
+  height: auto;
+  padding: 30px;
+}
+
+.text {
+  font-size: 20px;
+  padding: 20px;
+}
+
 
 /* Notes */
 span{
@@ -366,32 +388,13 @@ input[type="checkbox"]{
 .hero-btn {
   text-align: center;
   position: absolute;
-  font-size: 100%;
-  top: 50%;
-  left: 70%;
-  transform: translate(-50%, -50%);
+  font-size: auto;
+  top: 45%;
+  left: 65%;
   color: white;
   border: 3px solid rgb(238, 238, 238);
   border-radius: 15px;
   background-color: transparent;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid rgb(238, 238, 238);
-  background-color: white;
-  width: 80%;
-  position: absolute;
-  top:  40%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-.text {
-  font-size: 20px;
-  padding: 20px;
 }
 
 /* Details */
